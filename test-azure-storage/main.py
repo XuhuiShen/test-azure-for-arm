@@ -1,11 +1,10 @@
 #! /usr/bin/env python
+import os
 
 from azure.storage.file import FileService
 from azure.storage.file import ContentSettings
 
-file_service = FileService(account_name='nostalgia', account_key='HGEt9nDGre2nKZMnHxjtUrvHr/gCFSeJty/l5gLq1DmA2QGvSjK56jBBbfgFnPjLVRxS5Hou5RzcUttmuRIKmg==', endpoint_suffix='core.chinacloudapi.cn')
-
-file_service.create_directory('memoryshare', 'memorydir')
+file_service = FileService(account_name='nostalgia', account_key='PurYIn/f3UDPbVvF4yGNQxR9adN8MYcqGzFqjRSLd7d905oCiKG3w/81EDuLOjsHZ2CE/dErzG9SExj+Q2IgNQ==', endpoint_suffix='core.chinacloudapi.cn')
 
 file_service.create_file_from_path(
     'memoryshare',
